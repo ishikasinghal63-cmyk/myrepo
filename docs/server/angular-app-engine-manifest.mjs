@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '.',
+  basePath: '/myrepo',
   supportedLocales: {
   "en-US": ""
 },
