@@ -1,0 +1,65 @@
+<div class="love-container">
+  <div class="hearts-background">
+    <div
+      class="heart"
+      *ngFor="let heart of hearts"
+      [style.left.%]="heart.left"
+      [style.animation-delay.s]="heart.delay"
+    ></div>
+  </div>
+
+  <div class="love-card">
+    <h2>Hey You 💌</h2>
+    <p>Get Ready for my confession..</p>
+    <p>I tried to hide it, I really did..but every time i see you my heart says koi to roklo....</p>
+    <p>You make my world softer, brighter, and so much better. 💖</p>
+
+    <button (click)="toggleMessage()">
+      {{ showMore ? 'Hide Surprise' : 'Tap for a Surprise 💕' }}
+    </button>
+
+    <div *ngIf="showMore" class="extra-message">
+      <div class="letter-container">
+  <h2>To,</h2>
+  <p>The One and Only,<br>
+  <strong>Owner of My Heart ❤</strong><br>
+  MY JAAN</p>
+
+  <p><strong>Subject:</strong> Application for the post of <em>"Forever Love in Your Life"</em></p>
+
+  <p>Respected Love,</p>
+
+  <p>
+    With due respect and infinite feelings, I want to state that I am deeply in love with you and would like to apply
+    for the permanent position of <strong>"The Most Loving Partner"</strong> in your life.
+  </p>
+
+  <p>I have all the qualifications required for this post:</p>
+  <ul>
+    <li>I am caring, loyal, and can make you laugh even on your worst days.</li>
+    <li>I promise to never let you feel lonely or unloved.</li>
+    <li>I can give unlimited hugs, sweet messages, and full-time support (no holidays 😄).</li>
+  </ul>
+
+  <p>
+    I hope you will consider my application and give me a chance to prove my love.
+    I shall be ever grateful and promise to love you more every day.
+  </p>
+<div style="display: flex; flex-direction: row; justify-content: space-between;">
+
+  <div >
+
+    <p>Thanking you in advance,</p>
+    <p><strong>Yours lovingly,</strong><br>JAAN<br>
+  </div>
+  <!-- Dated: {{ today | date:'fullDate' }}</p> -->
+   <div>
+
+     <img src="https://i.pinimg.com/736x/32/d2/f8/32d2f800ba35247fc1a8dc61625ce016.jpg" style="width: 150px;">
+   </div>
+</div>
+</div>
+      <!-- <p>I don’t need a reason to love you — I just do. Always. 💫</p> -->
+    </div>
+  </div>
+</div>
